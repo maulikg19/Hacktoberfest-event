@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ float ht;
+ float r;
+ int i;
+ float velo;
+ float newvelo;
+ printf("Enter the height from the ball drops:");
+ scanf("%f",&ht);
+ printf("Enter the ratio by which velocity drops when collides with ground:");
+ scanf("%f",&r);
+ for(i=1;i<25;i++);
+ {
+  printf("%f\n",ht);
+  velo(float)(sqrt(2*9.8*ht));
+  newvelo=(float)(r*velo)/100;
+  ht=(float)((newvelo*newvelo)/(2*9.8));
+ } 
+ printf("\n");
+}
